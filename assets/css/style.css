@@ -66,6 +66,13 @@ header nav ul li a {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
 footer {
     background: #fce138;
     width: 100%;
@@ -150,6 +157,10 @@ section {
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 10px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;  
 }
 
 .hero-cta {
@@ -466,13 +477,6 @@ section {
     header nav ul li a {
       font-size: 20px;
     }
-
-    header nav ul li a:hover {
-        background: #fce138;
-        color: #024e76;
-        border-radius: 15px;
-        text-shadow: none;
-    }
   
     footer h2, footer div {
       text-align: center;
@@ -538,10 +542,6 @@ section {
 @media screen and (max-width: 575px) {
     .hero-form button {
       width: 100%;
-    }
-
-    .hero-form button:hover {
-        background-color: #39a6b2;  
     }
   
     .section-title {
