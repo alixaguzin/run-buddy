@@ -333,10 +333,42 @@ section {
     justify-content: space-around;
 }
 
-.trainer img {
+.trainer-img {
     width: 100%;
-    overflow: auto;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: ???;
+    position: relative;
 }
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(rgba(252, 225, 56, 0.3), ???);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: ???;
+}
+
+.trainer-img h3 {
+    position: relative;
+    z-index: 3;
+    top: 200px;
+    transition: ???;
+}
+  
+.trainer-img h4 {
+    position: relative;
+    z-index: 3;
+    top: 200px;
+    transition: ???;
+}
+  
+
 .trainer-bio {
     padding: 25px;
     overflow: auto;
@@ -350,12 +382,23 @@ section {
 }
 .trainer-bio h3 {
     font-size: 28px;
+    margin-bottom: 5px;
+    top: 200px;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 } 
 
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
   
 .trainer-bio p {
@@ -714,7 +757,30 @@ section {
   content: "";
 }
 
+.trainer-1 {
+    background-image: url("./assets/images/trainer-1.jpg");
+}
+
+.trainer-2 {
+    background-image: url("./assets/images/trainer-2.jpg");
+}
+
+.trainer-3 {
+    background-image: url("./assets/images/trainer-3.jpg");
+}
   
-  
-  
-  
+div span {
+    color: blue;
+}
+
+div:hover span {
+    color: red;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+
+}
+
+.trainer-mg::after.trainer-img h3, .trainer-img h4 {
+    display: none;
+}
